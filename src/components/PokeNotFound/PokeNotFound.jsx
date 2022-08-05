@@ -7,7 +7,7 @@ import React from 'react'
     return (
       <div>
         <img src="/images/pokebola.png" alt="" />
-        <h1>No se encontro el pokemon</h1>
+        <h1>Pokemon not found :( </h1>
         
       </div>
     )

@@ -22,7 +22,7 @@ const getStorageTheme = () => {
 
 const Home = () => {
     
-    const baseURL = 'https://pokeapi.co/api/v2/pokemon/?limit=250';
+    const baseURL = 'https://pokeapi.co/api/v2/pokemon/?limit=260';
     const [order, setOrder] = useState("id");
     const [types, setTypes] = useState([]);
     const [selectedType, setSelectedType] = useState("All");
@@ -30,8 +30,8 @@ const Home = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [allPokemons, setAllPokemons] = useState([]);
     const [theme, setTheme] = useState(getStorageTheme());
-    const indexOfLastPokemon = currentPage * 50;
-    const indexOfFirstPokemon = indexOfLastPokemon - 50;
+    const indexOfLastPokemon = currentPage * 21;
+    const indexOfFirstPokemon = indexOfLastPokemon - 21;
     const orderRef = useRef(); 
     const typeRef = useRef();
    

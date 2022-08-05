@@ -6,7 +6,7 @@ export default function Paginado({filteredList, currentPage, setCurrentPage}){
     const pageNumbers = []
     
     console.log(filteredList)
-    for (let i = 0 ; i < filteredList.length / 50 ; i++){
+    for (let i = 0 ; i < filteredList.length / 21 ; i++){
         pageNumbers.push(i + 1)
     }
 
