@@ -5,6 +5,6 @@
 </p>
 
 # Link of the Project
-**[POKEDEX](pokedex-challenge-beta.vercel.app)**
+**[POKEDEX](https://pokedex-challenge-beta.vercel.app/)**
 
 ## Done in React and Node.js
