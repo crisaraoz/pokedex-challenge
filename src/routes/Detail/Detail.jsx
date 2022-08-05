@@ -14,7 +14,7 @@ import Happiness from '/images/cards/happy.png';
 import Loading from '/images/pokeLoading.gif';
 import Pin from '/images/cards/pin.png';
 import Navbar from '../../components/Navbar/Navbar';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 const Detail = () => {
 
@@ -295,7 +295,9 @@ const Detail = () => {
           </section>
 
           <div>
-          <a href="/home" class="button">Go back to Home</a>
+          <Link to='/home'>
+            <a class="button" className={style.landinglink}>Go back to Home</a>
+          </Link>
           </div>
         </div>
         
