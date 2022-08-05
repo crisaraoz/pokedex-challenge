@@ -1,0 +1,244 @@
+.home{
+    position: absolute;
+    width: 10vw;
+    left: 4%;
+    top: 1%;
+}
+.button{
+    background-color: rgba(51, 51, 51, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+    width: 8vw;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.button:hover{
+    transform: translateY(-5px);
+}
+
+.game{
+    background-color: #1c231e;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    position: absolute;
+   
+    
+}
+.header {
+    width: 600px;
+    height: 85vh;
+    margin-top: 10px;
+    background: #232631;
+    padding: 15px;
+    border: 10px solid #0074bd;
+    border-radius: 15px;
+    box-shadow: -5px 5px 0px 5px #043570,inset -3px 3px 0px 3px rgba(0,0,0,0.25);
+    position: relative;
+}
+
+.reload{
+    position: absolute;
+    right: 4%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+.reload:hover{
+    transform: rotate(-180deg) translateY(2.5px);
+}
+
+.bkg{
+    margin-top: 8%;
+    border: 5px solid #0074bd;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.71), inset 1px 1px 7px 3px rgba(0,0,0,0.35);
+    border-radius: 2px;
+    margin-bottom: 2%;
+}
+
+.img{
+    position: absolute;
+    left: 14%;
+    top: 18%;
+    filter: grayscale(100%) brightness(0); 
+    transition: all 0.2s ease-in-out;
+}
+
+.introduction{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+/* Button Style */
+.form button{
+    cursor: pointer;
+    margin-top: 2%;
+    margin-left: 4%;
+
+    outline: none;
+    text-decoration: none;
+    border: none;
+
+    padding: 16px 32px;
+    color: #fff;
+    font-family: 'Roboto', Arial;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 1;
+    border-radius: 8px;
+
+    background-image: linear-gradient(45deg, #2378c9 10%, #133079 90%);
+    background-position: 90% 0;
+    background-size: 200% 200%;
+    box-shadow: 0 2px 8px -1px #09113f;
+
+    transition: all 0.5s ease;
+}
+
+.form button:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+.resultOk{
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+   
+    font-size: 24px;
+    display: block;
+    text-transform:uppercase;
+    color: #f2f2f2;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #008542, 2px -2px 0 #008542, -2px 2px 0 #008542, -2px -2px 0 #008542, 2px 0px 0 #008542, 0px 2px 0 #008542, -2px 0px 0 #008542, 0px -2px 0 #008542;
+}
+
+.resultFail{
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+   
+    font-size: 24px;
+    display: block;
+    text-transform:uppercase;
+    color: #f2f2f2;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #b41d1d, 2px -2px 0 #b41d1d, -2px 2px 0 #b41d1d, -2px -2px 0 #b41d1d, 2px 0px 0 #b41d1d, 0px 2px 0 #b41d1d, -2px 0px 0 #b41d1d, 0px -2px 0 #b41d1d;
+}
+
+.options {
+    width: 100%;
+    height: 5.5rem;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 49% 49%;
+    top: 30%;
+    left: 58%;
+}
+
+.options > button {
+    background-color: #1d7ca1;
+    border-color: #1C1D23;
+    color: rgb(226, 215, 215);
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 var(--margin);
+    border-radius: 6px;
+    border-color: #d3d3d3;
+}
+
+.options > button:hover {
+    background-color: #6cc8ec;
+    
+    font-weight: 700;
+}
+
+.optionButton {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2%;
+    margin-top: 1%;
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color: #008542;
+    color: #fff;
+    text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 0;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: unset;
+    padding: .8rem 1.5rem;
+    text-decoration: none;
+    font-weight: 900;
+    transition: all 0.7s cubic-bezier(0,.8,.26,.99);
+   }
+   
+   .optionButton:before {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    transition: .7s cubic-bezier(0,.8,.26,.99);
+    z-index: -1;
+    background-color: #008542!important;
+    box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+   }
+   
+   .optionButton:after {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+    transition: .7s cubic-bezier(0,.8,.26,.99);
+   }
+   
+   .optionButton:hover:before {
+    box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+   }
+   
+   .optionButton:hover:after {
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+   }
+   
+   .optionButton:active {
+    transform: translateY(4px);
+   }
+   
+  .optionButton:active:after {
+    box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+   }

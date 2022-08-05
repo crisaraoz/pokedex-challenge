@@ -1,0 +1,48 @@
+.position{
+    display: flex ; 
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    /* background: #E4ECFA; */
+    background: linear-gradient(90deg, rgb(33, 41, 29) 0%, rgb(17, 22, 18) 35%, rgb(6, 7, 6) 100%);
+}
+
+/* Button Style */
+.boton{
+    margin-top: 2rem;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    display: flex ; 
+    align-items: center; 
+    justify-content: space-around;
+    border: none;
+
+    padding: 16px 32px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 1;
+    border-radius: 20px;
+
+    background: linear-gradient(45deg, rgb(103, 105, 103) 0%, rgba(6,122,27,1) 35%, rgb(6, 73, 30) 100%);
+    background-position: 90% 0;
+    background-size: 200% 200%;
+    box-shadow: 0 5px 8px -2px #000000;
+
+    transition: all 0.5s ease;
+}
+
+.boton:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+      
+}
+
+.boton:active {
+    background-position: 0 0;
+    transform: translateY(3px);
+    background-image: linear-gradient(45deg, rgb(16, 37, 8) 0%, rgb(9, 80, 22) 35%, rgb(7, 61, 26) 100%);
+    box-shadow: inset 5px 5px 5px 0 #000000;
+}
