@@ -4,7 +4,8 @@
     grid-auto-rows: auto; 
     grid-gap: 1rem;
     margin-left: 0.5%;
-    padding-bottom: 2%;   
+    padding-bottom: 2%; 
+    margin-inline: auto;  
 }
 
 .home{
@@ -15,7 +16,7 @@
     flex-wrap: wrap;
     column-gap: 15px;
     row-gap: 15px;
-    padding: 20px;
+    padding: auto;
 }
 
 .fondo{
@@ -166,3 +167,16 @@ select {
     --clr-font: #282c35;
     --clr-primary: #d23669;
   }
+
+  /* Media Queries: Tablet Landscape */
+  @media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}

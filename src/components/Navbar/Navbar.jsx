@@ -5,6 +5,7 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 import Logo from '/images/palanding.png';
 import { GithubIcon } from "../../icons/GithubIcon";
 import ExternalLink from "../../components/ExternalLink/ExternalLink";
+import pokedex from '/images/pokedex.png';
 
 const getStorageTheme = () => {
   let theme = 'light-theme';
@@ -18,19 +19,29 @@ const Navbar = ({ searchTerm, handleSearch}) => {
 
   return (
     <>
-     <nav className={style.nav}>
+    <nav className={style.nav}>
+      <a>
+      <Link to='/home'>
+        <span className={style.nav}>
+          <img id="logoPoke" src={Logo} width="130px" alt="landing" />
+        </span>
+      </Link>
+      </a>
 
-        <Link to='/home'>
-                <span className={style.landinglink}>
-                    <img id="logoPoke" src={Logo} width="140" alt="landing" />
-                </span>
-        </Link>
-        
-        <SearchBar searchTerm ={searchTerm} handleSearch={handleSearch} ></SearchBar>
+      <ul>
+      <SearchBar searchTerm ={searchTerm} handleSearch={handleSearch} ></SearchBar>
+      </ul>
 
-        <ExternalLink href="https://github.com/crisaraoz">
-          <GithubIcon />
-        </ExternalLink>
+      <ul style={{float: 'right'}}>
+      <li>
+      <Link to='/game' style={{textDecoration: 'none'}} className={style.game}>
+          <button className={style.reload}>
+            <img src={pokedex} alt="Who's that Pokemon" width='30px'/> Play!
+          </button>
+      </Link>
+      </li>
+     
+      </ul>
 
     </nav>
     </>

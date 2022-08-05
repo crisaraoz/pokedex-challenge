@@ -12,9 +12,12 @@ export default function LandingPage() {
         <Link to = "/home" className={style.boton}>
           Home
         </Link>
-
+        <div className={style.pokedex}>
+          <img src="images/Ashe.png" alt="Loading.." width="180px" height="auto"  />
+        </div>
+        
       </div>
-      <img src="images/Ashe.png" alt="Loading.." width="180px" />
+      
     </div>
   );
 }

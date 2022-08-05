@@ -7,6 +7,12 @@
     background: linear-gradient(90deg, rgb(33, 41, 29) 0%, rgb(17, 22, 18) 35%, rgb(6, 7, 6) 100%);
 }
 
+.pokedex{
+    display: flex ; 
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
 /* Button Style */
 .boton{
     margin-top: 2rem;
@@ -45,4 +51,16 @@
     transform: translateY(3px);
     background-image: linear-gradient(45deg, rgb(16, 37, 8) 0%, rgb(9, 80, 22) 35%, rgb(7, 61, 26) 100%);
     box-shadow: inset 5px 5px 5px 0 #000000;
+}
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
 }
