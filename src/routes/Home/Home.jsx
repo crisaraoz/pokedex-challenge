@@ -191,7 +191,7 @@ const darkWhite = () => {
           <button className={style.reload} width='20px' onClick={() => darkWhite()}>🌓</button>
         </div>
         
-        Button for reload the game
+        Button for game
         <Link to='/game' style={{textDecoration: 'none'}} className={style.game}>
             <button className={style.reload}>
                 <img src={pokedex} alt="Who's that Pokemon" width='30px'/> Play!

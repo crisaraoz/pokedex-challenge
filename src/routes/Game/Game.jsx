@@ -46,7 +46,6 @@ export default function Game() {
 useEffect(() => {
     
     if(!allPokemons.length){
-         
                 const grabData = async () => {
                     const { data } = await axios(baseURL)
                     const { results } = data
@@ -133,9 +132,11 @@ useEffect(() => {
                       Oops! Incorrect. This pokemon is {chosenPokemon?.data.name}
                   </div>
                   :
-                  <div></div>
+                  <div>
+                  </div>
               }
             </div>
+
         </div>
         </div>
     )

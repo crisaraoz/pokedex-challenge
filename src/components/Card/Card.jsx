@@ -45,7 +45,7 @@ const Card = ({poke}) => {
         <div className={style.card} style={{ backgroundImage: `url(images/typesbkgm/${poke.types[0].type.name}.png)` }} >
             <span className={style.name}>{poke.name.charAt(0).toUpperCase()+ poke.name.slice(1)}</span>
             {
-              poke.id< 100 ?
+              poke.id< 101 ?
               <img src={`./images/sprites/${poke.id}.gif`} alt="Img not found" height="190px" className={style.img} />
               :
               <img src={`${poke.sprites.other.home.front_default}`}  height="190px" className={style.img} />
