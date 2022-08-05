@@ -1,9 +1,6 @@
 {
-<<<<<<< HEAD
   "name": "pokedex-challenge",
-=======
   "name": "pokekedex-challenge",
->>>>>>> 803f4df9667f94c5dd0808806ca0f1d40f82e203
   "private": true,
   "version": "0.0.0",
   "scripts": {
