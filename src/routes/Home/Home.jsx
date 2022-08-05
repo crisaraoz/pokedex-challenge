@@ -30,8 +30,8 @@ const Home = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [allPokemons, setAllPokemons] = useState([]);
     const [theme, setTheme] = useState(getStorageTheme());
-    const indexOfLastPokemon = currentPage * 21;
-    const indexOfFirstPokemon = indexOfLastPokemon - 21;
+    const indexOfLastPokemon = currentPage * 20;
+    const indexOfFirstPokemon = indexOfLastPokemon - 20;
     const orderRef = useRef(); 
     const typeRef = useRef();
    

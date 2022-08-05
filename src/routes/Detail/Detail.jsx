@@ -14,6 +14,7 @@ import Happiness from '/images/cards/happy.png';
 import Loading from '/images/pokeLoading.gif';
 import Pin from '/images/cards/pin.png';
 import Navbar from '../../components/Navbar/Navbar';
+import {Link} from 'react-router-dom'
 
 const Detail = () => {
 
@@ -74,9 +75,6 @@ const Detail = () => {
   return (
 
     <div>
-
-      <Navbar />
-
 
       {pokemon.length === 0 || pokemonSpe.length === 0 ? (
         <h3>
@@ -295,7 +293,13 @@ const Detail = () => {
               </div>
             </div>
           </section>
+
+          <div>
+          <a href="/home" class="button">Go back to Home</a>
+          </div>
         </div>
+        
+        
 
       )}
     </div>
